@@ -1,0 +1,8 @@
+# Force Git to treat these files as binary (won't count in language stats)
+*.js binary
+*.css binary
+*.min.js binary
+*.min.css binary
+
+# Properly handle line endings (optional but recommended)
+* text=auto
