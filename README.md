@@ -15,6 +15,7 @@ Select the link and VS Code will prompt for a debug configuration. Select Django
 The launch.json file contains a number of debugging configurations, each of which is a separate JSON object within the configuration array.
 Scroll down to and examine the configuration with the name "Python: Django":
 ```
+{
  "version": "0.2.0",
   "configurations": [
     {
