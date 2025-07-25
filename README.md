@@ -8,12 +8,16 @@ python -m venv .venv
 .venv/Scripts/activate
 ```
 # Ative o Django no debugger
+Instale o Django no seu ambiente virtual
+```
+pip install django
+```
 Create a debugger launch profile
-Switch to Run view in VS Code (using the left-side activity bar or F5). You may see the message "To customize Run and Debug create a launch.json file".
-This means that you don't yet have a launch.json file containing debug configurations. VS Code can create that for you if you click on the create a launch.json file link:
-Select the link and VS Code will prompt for a debug configuration. Select Django from the dropdown and VS Code will populate a new launch.json file with a Django run configuration.
-The launch.json file contains a number of debugging configurations, each of which is a separate JSON object within the configuration array.
-Scroll down to and examine the configuration with the name "Python: Django":
+Alterne para a visualização de Execução no VS Code (usando a barra de atividades do lado esquerdo ou a tecla F5). Você poderá ver a mensagem "Para personalizar a Execução e a Depuração, crie um arquivo launch.json".
+Isso significa que você ainda não possui um arquivo launch.json contendo configurações de depuração. O VS Code pode criá-lo para você clicando no link "Criar um arquivo launch.json":
+Selecione o link e o VS Code solicitará uma configuração de depuração. Selecione Django no menu suspenso e o VS Code preencherá um novo arquivo launch.json com uma configuração de execução do Django.
+O arquivo launch.json contém diversas configurações de depuração, cada uma das quais é um objeto JSON separado dentro do array de configuração.
+Role para baixo e examine a configuração com o nome "Python: Django":
 ```
 {
  "version": "0.2.0",
